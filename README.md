@@ -6,7 +6,7 @@
 <table>
   <tr>
     <td height="140px" align="center"><img src="https://avatars.githubusercontent.com/u/82995817?v=4" width="140px" /> 
-      <br /> 단국대 소프트웨어학과<br />천은유<a rhef="https://github.com/ChunEunyu">
+      <br /> 단국대 소프트웨어학과<br /><a rhef="https://github.com/ChunEunyu">천은유
     <td height="140px" align="center"><a rhef="https://github.com/softwarerbfl"> <img src="https://avatars.githubusercontent.com/u/77094833?v=4" width="140px" />
       <br /> 단국대 소프트웨어학과<br /> 배규리
     <td height="140px" align="center"> <a rhef="https://github.com/park-seong-cheol"> <img src="https://avatars.githubusercontent.com/u/94591376?v=4" width="140px" />
