@@ -1,0 +1,65 @@
+# [실습1C-2] 세 정수를 입력받아 중앙값 구하기
+
+def med3(a, b, c):
+    """a,b,c의 중앙값을 구하여 반환"""
+    if a >= b:
+        if b >= c: # a>=b>=c
+          return b 
+        elif a <= c: # c>=a>=b
+          return a 
+        else:      # c>=b>=a
+          return c 
+    elif a > c:    # a>c>b 
+        return a
+    elif b > c:    # b>c>a
+        return c
+    else:          # b>a>c
+        return b
+
+print('세 정수의 중앙값을 구합니다.')
+a = int(input('정수 a의 값을 입력하세요.: '))
+b = int(input('정수 b의 값을 입력하세요.: '))
+c = int(input('정수 c의 값을 입력하세요.: '))
+
+print(f'중앙값은 {med3(a,b,c)}입니다.')
+
+# [실습1-10] a부터 b까지 정수의 합 구하기
+
+print('a부터 b까지 정수의 합을 구합니다.')
+a = int(input('정수 a를 입력하세요.: '))
+b = int(input('정수 b를 입력하세요.: '))
+
+if a > b:
+    a, b = b, a #오름차순으로 정렬
+
+sum = 0
+for i in range(a, b + 1):
+    if i < b:
+        print(f'{i} + ', end='')
+    else:
+        print(f'{i} = ', end='')
+    sum += i
+
+print(sum)
+
+# [실습1-21] 구구단 곱셈표 출력하기
+
+print('-' * 27)
+for i in range(1, 18):                # 행
+    for j in range(1, 10):            # 열
+        print(f'{i * j:3}', end='')   
+    print()                           # 행 변경
+print('-' * 27)
+
+
+# [실습1-23] 오른쪽 아래가 직각인 이등변 삼각형 * 출력하기 
+
+print('오른쪽 아래가 직각인 이등변 삼각형을 출력합니다. ')
+n = int(input('짧은 변의 길이를 입력하세요.: '))
+
+for i in range(n):
+    for _ in range(n - i - 1): # 공백을 출력
+        print(' ', end='')
+    for _ in range(i + 1):     # *을 출력
+        print('*', end='')
+    print()
