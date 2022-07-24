@@ -10,13 +10,12 @@ def pop():
     else:
         return stack.pop()
 def size():
-
   return len(stack)
+  
 def empty():
-
   return 0 if stack else 1
-def top():
 
+def top():
   return stack[-1] if stack else -1
 
 N = int(input())
